@@ -101,9 +101,9 @@ int startLoop() {
         auto res = sendTrade(j, stoi(timer));
 
         if (res->status == 201) {
-            std::cout << "Trade sent successfully. Waiting " << timer << " seconds.\n";
+            std::cout << "Trade ad sent successfully. Waiting " << timer << " seconds.\n";
         } else {
-            std::cout << "Trade error: " << res->status << "\nError code: " << res->body << "\n";
+            std::cout << "Trade ad error: " << res->status << "\nError code: " << res->body << "\n";
             
             if (res->status == 400 || res->status == 401) {
                 startLoop();
