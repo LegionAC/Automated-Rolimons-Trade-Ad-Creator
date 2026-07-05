@@ -1,5 +1,6 @@
 <u>**Automated-Rolimons-Trade-Ad-Creator**<u>
  - Automatically creates trade ads on Rolimons at user configured intervals.
+ - Written in C++ for a lightweight, fast execution program.
 
 <u>User Guide<u>
  - The program will first query user config, starting with player id selection. Copy the id located in your url tab.
