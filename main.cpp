@@ -105,7 +105,7 @@ int startLoop() {
         } else {
             std::cout << "Trade error: " << res->status << "\nError code: " << res->body << "\n";
             
-            if (res->status == 400) {
+            if (res->status == 400 || 401) {
                 startLoop();
             }
 
