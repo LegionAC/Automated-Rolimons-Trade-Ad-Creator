@@ -13,10 +13,4 @@
 
 <img width="506" height="197" alt="image" src="https://github.com/user-attachments/assets/06b2d4d8-6a67-44ac-b8c8-3fccc0364167" />
 
-
-
-
-
-
-
 - Lastly, the program will ask for the wait duration (in seconds). I recommend either 15 minutes if you want to send trades as fast as possible, or 24 minutes if you want to space out your trade ads throughout the day (otherwise you'll reach the daily limit, 24 minutes is the minimum time without reaching this limit). I also recommend a small buffer period, to avoid going out of sync if you have a poor internet connection (3-10 seconds will work).
