@@ -110,8 +110,6 @@ int startLoop() {
             if (res->status == 400 || res->status == 401) {
                 startLoop();
             }
-
-            return -1;
         }
 
         sleep_for(seconds(stoi(timer)));
