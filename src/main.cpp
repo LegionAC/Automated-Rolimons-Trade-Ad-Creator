@@ -105,7 +105,7 @@ int startLoop() {
         } else {
             std::cout << "Trade ad error: " << res->status << "\nError code: " << res->body << "\n";
             
-            if (res->status == 400 || res->status == 401) {
+            if (res->status == 400 || res->status == 401 || res->status == 14) {
                 startLoop();
             }
 
