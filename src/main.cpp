@@ -102,10 +102,12 @@ int startLoop() {
 
         if (res->status == 201) {
             std::cout << "Trade ad sent successfully. Waiting " << timer << " seconds.\n";
+        } else if (res->status == 14) {
+            std::cout << "Trade ad limit reached... Waiting " << timer << " seconds.\n";
         } else {
             std::cout << "Trade ad error: " << res->status << "\nError code: " << res->body << "\n";
             
-            if (res->status == 400 || res->status == 401 || res->status == 14) {
+            if (res->status == 400 || res->status == 401) {
                 startLoop();
             }
 
